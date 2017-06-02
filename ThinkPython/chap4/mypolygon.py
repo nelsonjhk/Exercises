@@ -72,7 +72,11 @@ def reverseArc(t, r, angle):
 # newArc(bob, 20, 90)
 
 def flower(t, n, petalwidth, petalLength):
+<<<<<<< HEAD
     """ Draws n petals in a flower shape. 
+=======
+    """ Draws n petals in a flower shape.
+>>>>>>> ff7e38aaa8e6e866150f10416ba177c5a9d47358
     petal width adjusts size of the arc's circle
     petal length adjusts the angle of the arcs
     """
@@ -81,9 +85,15 @@ def flower(t, n, petalwidth, petalLength):
         newArc(t, petalwidth, petalLength)
         newArc(t, petalwidth, petalLength)
         t.rt(petalAngle)
+<<<<<<< HEAD
         
 def realflower(t, n, petalwidth, petalLength):
     """ Draws n petals in a flower shape. 
+=======
+
+def realflower(t, n, petalwidth, petalLength):
+    """ Draws n petals in a flower shape.
+>>>>>>> ff7e38aaa8e6e866150f10416ba177c5a9d47358
     petal width adjusts size of the arc's circle
     petal length adjusts the angle of the arcs
     """
@@ -93,15 +103,22 @@ def realflower(t, n, petalwidth, petalLength):
         t.rt(180)
         reverseArc(t, petalwidth, 360-petalLength)
         t.rt(180 + petalAngle)
+<<<<<<< HEAD
 #flower(uncle, 4, 25, 30) 
 #flower(uncle, 8, 35, 40) 
 # realflower(uncle, 4, 25, 30) 
+=======
+#flower(uncle, 4, 25, 30)
+#flower(uncle, 8, 35, 40)
+# realflower(uncle, 4, 25, 30)
+>>>>>>> ff7e38aaa8e6e866150f10416ba177c5a9d47358
 def slice(t, length, sideAngle, baseLength):
     """ Draws a slice of turtle pie"""
 
     reversePolyline(t, 1, length, 180+sideAngle)
     reversePolyline(t, 1, baseLength, 180+sideAngle)
     polyline(t, 1, length, 180)
+<<<<<<< HEAD
     
 
 def pie(t, n, length):
@@ -110,6 +127,16 @@ def pie(t, n, length):
         t: Turtle object
         n: number of trianges
         length: length of an isoceles side of triangle. 
+=======
+
+
+def pie(t, n, length):
+    """ Draws turtle pies with n sections.
+
+        t: Turtle object
+        n: number of trianges
+        length: length of an isoceles side of triangle.
+>>>>>>> ff7e38aaa8e6e866150f10416ba177c5a9d47358
         """
 
     innerAngle = 360.0 / n
